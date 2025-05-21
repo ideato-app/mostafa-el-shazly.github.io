@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="300px" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Stem -->
+  <path d="M100,300 C100,200 100,100 100,10" fill="none" stroke="#4a7c59" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Left Leaves -->
+  <path d="M100,60 C80,40 40,50 30,70 C20,90 40,110 60,100 C80,90 90,70 100,60" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1.5"/>
+  <path d="M100,120 C80,100 30,110 20,140 C10,170 40,190 70,180 C90,170 90,140 100,120" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1.5"/>
+  <path d="M100,190 C80,170 30,180 20,210 C10,240 40,260 70,250 C90,240 90,210 100,190" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1.5"/>
+  
+  <!-- Right Leaves -->
+  <path d="M100,40 C120,20 160,30 170,50 C180,70 160,90 140,80 C120,70 110,50 100,40" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1.5"/>
+  <path d="M100,100 C120,80 170,90 180,120 C190,150 160,170 130,160 C110,150 110,120 100,100" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1.5"/>
+  <path d="M100,170 C120,150 170,160 180,190 C190,220 160,240 130,230 C110,220 110,190 100,170" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1.5"/>
+  <path d="M100,240 C120,220 160,230 170,250 C180,270 160,290 140,280 C120,270 110,260 100,240" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1.5"/>
+  
+  <!-- Leaf Veins -->
+  <path d="M100,60 C90,70 70,75 50,70" fill="none" stroke="#4a7c59" stroke-width="1" stroke-linecap="round"/>
+  <path d="M100,120 C90,130 70,140 50,130" fill="none" stroke="#4a7c59" stroke-width="1" stroke-linecap="round"/>
+  <path d="M100,190 C90,200 70,210 50,200" fill="none" stroke="#4a7c59" stroke-width="1" stroke-linecap="round"/>
+  <path d="M100,40 C110,50 130,55 150,50" fill="none" stroke="#4a7c59" stroke-width="1" stroke-linecap="round"/>
+  <path d="M100,100 C110,110 130,115 150,110" fill="none" stroke="#4a7c59" stroke-width="1" stroke-linecap="round"/>
+  <path d="M100,170 C110,180 130,185 150,180" fill="none" stroke="#4a7c59" stroke-width="1" stroke-linecap="round"/>
+  <path d="M100,240 C110,250 130,255 150,250" fill="none" stroke="#4a7c59" stroke-width="1" stroke-linecap="round"/>
+  
+  <!-- Small details -->
+  <circle cx="100" cy="10" r="5" fill="#a4c3a2" stroke="#4a7c59" stroke-width="1"/>
+</svg> 
