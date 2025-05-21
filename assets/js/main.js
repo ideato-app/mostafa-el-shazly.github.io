@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
         disable: 'mobile' // Disable animations on mobile for better performance
     });
 
-    // Initialize Typed.js
+    // Initialize Typed.js with Arabic text
     const typed = new Typed('#typed', {
         strings: [
-            'Agriculture Student',
-            'Animal & Poultry Production Specialist',
-            'Passionate about Sustainable Farming',
-            'Future Agricultural Innovator'
+            'طالب زراعة',
+            'متخصص في إنتاج الحيوان والدواجن',
+            'شغوف بالزراعة المستدامة',
+            'مبتكر زراعي مستقبلي'
         ],
         typeSpeed: 50,
         backSpeed: 30,

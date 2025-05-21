@@ -25,13 +25,15 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
     overflow-x: hidden;
     opacity: 0;
     transition: opacity 0.5s ease;
+    text-align: right;
+    direction: rtl;
 }
 
 body.page-loaded {
@@ -61,6 +63,71 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* RTL overrides for icon spacing */
+.fas,
+.fab {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.info-item i {
+    margin-left: 15px !important;
+    margin-right: 0 !important;
+}
+
+/* Header Styles - RTL adjustments */
+header .container {
+    flex-direction: row-reverse;
+}
+
+nav ul {
+    padding-right: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+/* Menu toggle alignment */
+.menu-toggle {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* About section - RTL adjustments */
+.about-info {
+    text-align: right;
+}
+
+/* Progress bars - RTL adjustments */
+.progress {
+    float: right;
+}
+
+/* Media queries adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        right: auto;
+        left: -100%;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        right: auto;
+        left: 0;
+    }
+
+    .menu-toggle {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    nav ul li {
+        margin: 0 0 20px 0;
+    }
 }
 
 .section-title {
