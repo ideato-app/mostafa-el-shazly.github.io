@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio website for Mostafa El Shazly, agriculture student at Minia University specializing in Animal and Poultry Production">
     <title>Mostafa El Shazly - Agriculture Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,17 +19,16 @@
     <header>
         <div class="container">
             <div class="logo">Mostafa El Shazly</div>
-            <nav>
+            <nav role="navigation">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#courses">Courses</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle">
+            <div class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -38,20 +39,18 @@
         <div class="container">
             <div class="hero-content">
                 <div class="profile-image" data-aos="fade-up">
-                    <div class="image-container">
-                        <!-- Profile image will be added via CSS -->
-                    </div>
+                    <div class="image-container" aria-label="Profile photo of Mostafa El Shazly"></div>
                 </div>
                 <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
                     <h1>Mostafa El Shazly</h1>
                     <div class="typed-text">
-                        <span id="typed"></span>
+                        <span id="typed" aria-live="polite"></span>
                     </div>
                     <p>Agriculture Student at Minia University</p>
-                    <a href="#" class="btn btn-primary">Download CV</a>
+                    <a href="#" class="btn btn-primary"><span>Download CV</span></a>
                 </div>
             </div>
-            <div class="animated-bg">
+            <div class="animated-bg" aria-hidden="true">
                 <!-- Animated leaves and plants will be added here -->
                 <div class="leaf leaf-1"></div>
                 <div class="leaf leaf-2"></div>
@@ -96,9 +95,7 @@
                     </div>
                 </div>
                 <div class="about-image" data-aos="fade-left">
-                    <div class="image-frame">
-                        <!-- About profile image will be added via CSS -->
-                    </div>
+                    <div class="image-frame" aria-label="Mostafa El Shazly in agricultural setting"></div>
                 </div>
             </div>
         </div>
@@ -114,49 +111,49 @@
             <div class="courses-grid">
                 <div class="course-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="course-icon">
-                        <i class="fas fa-spray-can"></i>
+                        <i class="fas fa-spray-can" aria-hidden="true"></i>
                     </div>
                     <h3>Pesticide Application</h3>
                     <p>مطبقي مبيدات</p>
                 </div>
                 <div class="course-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="course-icon">
-                        <i class="fas fa-seedling"></i>
+                        <i class="fas fa-seedling" aria-hidden="true"></i>
                     </div>
                     <h3>Field Crops Production</h3>
                     <p>Techniques for efficient crop production</p>
                 </div>
                 <div class="course-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="course-icon">
-                        <i class="fas fa-drumstick-bite"></i>
+                        <i class="fas fa-drumstick-bite" aria-hidden="true"></i>
                     </div>
                     <h3>Poultry Nutrition & Care</h3>
                     <p>Advanced poultry management methods</p>
                 </div>
                 <div class="course-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="course-icon">
-                        <i class="fas fa-cheese"></i>
+                        <i class="fas fa-cheese" aria-hidden="true"></i>
                     </div>
                     <h3>Dairy Science Basics</h3>
                     <p>Fundamentals of dairy production</p>
                 </div>
                 <div class="course-card" data-aos="zoom-in" data-aos-delay="500">
                     <div class="course-icon">
-                        <i class="fas fa-microscope"></i>
+                        <i class="fas fa-microscope" aria-hidden="true"></i>
                     </div>
                     <h3>Agricultural Microbiology</h3>
                     <p>Studying microorganisms in agriculture</p>
                 </div>
                 <div class="course-card" data-aos="zoom-in" data-aos-delay="600">
                     <div class="course-icon">
-                        <i class="fas fa-flask"></i>
+                        <i class="fas fa-flask" aria-hidden="true"></i>
                     </div>
                     <h3>Soil Chemical Analysis</h3>
                     <p>Techniques for soil quality assessment</p>
                 </div>
                 <div class="course-card" data-aos="zoom-in" data-aos-delay="700">
                     <div class="course-icon">
-                        <i class="fas fa-industry"></i>
+                        <i class="fas fa-industry" aria-hidden="true"></i>
                     </div>
                     <h3>Food Industries</h3>
                     <p>Processing and preservation methods</p>
@@ -177,25 +174,29 @@
                     <h3>Agriculture Skills</h3>
                     <div class="skill-item">
                         <span>Soil Analysis</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <span>Poultry Care</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <span>Pesticide Application</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 80%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <span>Crop Management</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 75%"></div>
                         </div>
                     </div>
@@ -204,65 +205,33 @@
                     <h3>Digital Skills</h3>
                     <div class="skill-item">
                         <span>Microsoft Word</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <span>Microsoft Excel</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <span>Microsoft PowerPoint</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 80%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <span>Internet Research</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                            aria-valuemax="100">
                             <div class="progress" style="width: 95%"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>Gallery</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-item" data-aos="zoom-in">
-                    <div class="gallery-image">
-                        <!-- Gallery image 1 via CSS -->
-                    </div>
-                </div>
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="gallery-image">
-                        <!-- Gallery image 2 via CSS -->
-                    </div>
-                </div>
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="gallery-image">
-                        <!-- Gallery image 3 via CSS -->
-                    </div>
-                </div>
-                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="gallery-image">
-                        <!-- Gallery image 4 via CSS -->
-                    </div>
-                </div>
-            </div>
-            <div class="decorative-plants">
-                <div class="plant-decoration plant-left"></div>
-                <div class="plant-decoration plant-right"></div>
             </div>
         </div>
     </section>
@@ -275,39 +244,33 @@
                 <div class="underline"></div>
             </div>
             <div class="contact-container">
-                <div class="contact-info" data-aos="fade-right">
+                <div class="contact-info" data-aos="fade-up">
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>01009083346</p>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <p><a href="tel:01009083346">01009083346</a></p>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>mostafaxy342@gmail.com</p>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <p><a href="mailto:mostafaxy342@gmail.com">mostafaxy342@gmail.com</a></p>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <p>Minia, Egypt</p>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <p><a href="https://wa.me/201009083346">WhatsApp: 01009083346</a></p>
                     </div>
-                </div>
-                <div class="contact-form" data-aos="fade-left">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook profile"><i class="fab fa-facebook-f"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter profile"><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram profile"><i class="fab fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -316,12 +279,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Mostafa El Shazly. All Rights Reserved.</p>
+            <p>&copy; <span id="current-year">2023</span> Mostafa El Shazly. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Animated Leaves -->
-    <div class="floating-elements">
+    <div class="floating-elements" aria-hidden="true">
         <div class="floating-leaf leaf-float-1"></div>
         <div class="floating-leaf leaf-float-2"></div>
         <div class="floating-leaf leaf-float-3"></div>
@@ -332,6 +295,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
