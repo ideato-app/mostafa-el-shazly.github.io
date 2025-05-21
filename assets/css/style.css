@@ -93,8 +93,8 @@ nav ul li {
 
 /* Menu toggle alignment */
 .menu-toggle {
-    margin-right: auto;
-    margin-left: 0;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 /* About section - RTL adjustments */
@@ -110,19 +110,19 @@ nav ul li {
 /* Media queries adjustments */
 @media screen and (max-width: 768px) {
     nav {
-        right: auto;
-        left: -100%;
-        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        left: auto;
+        right: -100%;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
     nav.active {
-        right: auto;
-        left: 0;
+        left: auto;
+        right: 0;
     }
 
     .menu-toggle {
-        margin-right: auto;
-        margin-left: 0;
+        margin-right: 0;
+        margin-left: auto;
     }
 
     nav ul li {
